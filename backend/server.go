@@ -6,7 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func setupServer() *gin.Engine {
+func SetupServer() *gin.Engine {
 	router := gin.Default()
 	router.GET("/", index)
 	return router

@@ -10,7 +10,7 @@ import (
 
 func TestIndex200(t *testing.T) {
 
-	router := setupServer()
+	router := SetupServer()
 	w := httptest.NewRecorder()
 	req, _ := http.NewRequest("GET", "/", nil)
 	router.ServeHTTP(w, req)
