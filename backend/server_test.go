@@ -16,6 +16,6 @@ func TestIndex200(t *testing.T) {
 	router.ServeHTTP(w, req)
 
 	require.Equal(t, http.StatusOK, w.Code)
-	require.Equal(t, "hello-world", w.Body.String())
+	require.Equal(t, "hello-world!", w.Body.String())
 
 }

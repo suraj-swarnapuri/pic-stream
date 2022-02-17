@@ -13,5 +13,5 @@ func setupServer() *gin.Engine {
 }
 
 func index(c *gin.Context) {
-	c.String(http.StatusOK, "hello-world")
+	c.String(http.StatusOK, "hello-world!")
 }
