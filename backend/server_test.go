@@ -10,12 +10,12 @@ import (
 
 func TestIndex200(t *testing.T) {
 
-	router := setupServer()
+	router := SetupServer()
 	w := httptest.NewRecorder()
 	req, _ := http.NewRequest("GET", "/", nil)
 	router.ServeHTTP(w, req)
 
 	require.Equal(t, http.StatusOK, w.Code)
-	require.Equal(t, "hello-world", w.Body.String())
+	require.Equal(t, "hello-world!", w.Body.String())
 
 }
